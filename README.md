@@ -10,16 +10,22 @@ El ESP32 inicia en modo de punto de acceso (AP) si no encuentra credenciales WiF
 Las credenciales ingresadas son almacenadas en memoria no volátil (Preferences) para conectarse automáticamente en el futuro.
 
 2. **Lectura de Sensores**:
+   
 Utiliza un sensor láser VL53L5CX para medir distancias en una matriz de 4x4.
 Utiliza un sensor BME280 para medir la temperatura y la humedad ambiental.
 
 4. **Envío de Datos a Firebase**:
+   
 Los datos del sensor láser se envían a una base de datos Firebase en formato JSON, filtrando valores fuera de rango.
 Los datos de temperatura y humedad también se envían a otra ubicación en Firebase.
-5. **Servidor Web Local**:
+
+6. **Servidor Web Local**:
+   
 Un servidor web local en el puerto 80 permite a los usuarios configurar las credenciales WiFi a través de un formulario HTML.
 Maneja redirecciones y solicitudes HTTP para la configuración del WiFi.
-6. **Flujo Principal**:
+
+8. **Flujo Principal**:
+   
 En el bucle principal (loop), verifica si el ESP32 está conectado a WiFi:
 Si está conectado, obtiene datos de los sensores y los envía a Firebase.
 Si no está conectado, permanece en modo AP para configuración.
