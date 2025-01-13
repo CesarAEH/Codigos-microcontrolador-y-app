@@ -1,3 +1,15 @@
+// Este código utiliza dependencias bajo las siguientes licencias de código abierto:
+// - Licencia BSD (Flutter): Permite su uso, modificación y distribución siempre que se mantenga la licencia original.
+// - Licencia Apache 2.0 (latlong2): Permite el uso, distribución y modificación con ciertas condiciones como la atribución.
+// - Licencia MIT (Google Nav Bar, path_provider): Permite el uso, modificación y distribución sin restricciones adicionales.
+//
+// Por favor, consulta los términos específicos de cada licencia para más detalles:
+// Flutter: https://github.com/flutter/flutter/blob/master/LICENSE
+// Latlong2: https://pub.dev/packages/latlong2/license
+// Google Nav Bar: https://pub.dev/packages/google_nav_bar/license
+// Path Provider: https://pub.dev/packages/path_provider/license
+//
+
 import 'package:flutter/material.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:latlong2/latlong.dart';
